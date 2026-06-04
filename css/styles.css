@@ -1,0 +1,200 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+nav.navbar {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    z-index: 100;
+}
+.header-bar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* le nav aussi, et en flex */
+.menu-sections {
+    width: 100%;                    /* IMPORTANT */
+    display: flex;
+    justify-content: space-between; /* gauche <----> droite */
+    align-items: center;
+    padding: 20px 30px;
+    background-color: black;
+    box-sizing: border-box;         /* IMPORTANT */
+}
+
+.left-text {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+.right-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.center-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav .menu li a:hover {
+    border-bottom: 4px solid #333;
+}
+
+
+
+nav, header, section, footer{
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;  
+
+}
+
+footer{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 0.5rem 0; 
+}
+
+footer a {
+color: white;
+text-decoration: underline;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /*a ajuster selon le design*/
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+
+/* SECTION PROJETS */
+
+#projets {
+    background-color: #c384a4;
+    padding: 100px 0;
+}
+
+#projets h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 3rem;
+}
+
+/* CARROUSEL */
+
+.carousel {
+    display: flex;
+    gap: 40px;
+
+    overflow-x: auto;
+
+    padding: 0 80px 20px 80px;
+
+    scroll-behavior: smooth;
+}
+
+/* Cache la barre de défilement */
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel {
+    scrollbar-width: none;
+}
+
+/* PROJET */
+
+.projet {
+    flex-shrink: 0;
+
+    width: 350px;
+    
+    text-decoration: none;
+    color: black;
+}
+
+/* IMAGE CARRÉE */
+
+.projet img {
+    width: 350px;
+    height: 350px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 10px;
+}
+
+/* EFFET HOVER */
+
+.projet img {
+    transition: transform 0.4s ease;
+}
+
+.projet:hover img {
+    transform: scale(1.03);
+}
+
+
+.projet h3 {
+    margin-top: 15px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
